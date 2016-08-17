@@ -1,0 +1,68 @@
+head,title,body,h1,figure, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: cyan;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  background: transparent;
+}
+
+ul {
+  position:relative;
+  width: 300px;
+  margin: 50px auto;
+}
+
+li {
+  display: block;
+  border: 5px solid black;
+  float: left;
+  height: 90px;
+  width: 90px;
+  background-color: gray;
+}
+
+.x {
+  background: white;
+}
+
+.o {
+  background: white;
+}
+
+.x:after{
+  line-height: 95px;
+  margin-left: 10px;
+  content: 'X';
+  font-size: 100px;
+  color:blue;
+}
+.o:after {
+  line-height: 95px;
+  margin-left: 10px;
+  content: 'O';
+  font-size: 100px;
+  color: red;
+}
+
+li:hover {
+  background-color: yellow;
+}
+
+
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
