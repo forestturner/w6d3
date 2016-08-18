@@ -1,6 +1,8 @@
 var View = function (game, $el) {
   this.$el = $el;
   this.game = game;
+  this.setupBoard();
+  this.bindEvents();
 };
 
 View.prototype.mapCoords = function (index) {

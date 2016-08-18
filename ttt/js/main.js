@@ -4,7 +4,5 @@ const Game = require ('./game.js');
 $( () => {
   let game = new Game();
   let $board = $(".ttt");
-  let view = new View(game, $board);
-  view.setupBoard();
-  view.bindEvents();
+  new View(game, $board);
 });
